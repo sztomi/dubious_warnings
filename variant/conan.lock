@@ -1,0 +1,37 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++\ncompiler.version=8\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "5059700e-d89b-11e9-8235-645d86dec98e": {
+    "pref": "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a",
+    "options": "shared=False"
+   },
+   "5059700f-d89b-11e9-8235-645d86dec98e": {
+    "pref": "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412:2d6ca29c5b1780ea58e23583d1c4661c70e9fa6f",
+    "options": "shared=False\nfontconfig:shared=False",
+    "requires": {
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "5059700e-d89b-11e9-8235-645d86dec98e"
+    }
+   },
+   "50597010-d89b-11e9-8235-645d86dec98e": {
+    "pref": "ffmpeg/1.0@_/_#db509be46b02fdcf65bd29bdaaf66396:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a",
+    "options": "shared=False"
+   },
+   "50597011-d89b-11e9-8235-645d86dec98e": {
+    "pref": "zlib/1.0@_/_#0e280695800433574bfb184cc8621b73:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a",
+    "options": "shared=False"
+   },
+   "50597012-d89b-11e9-8235-645d86dec98e": {
+    "pref": "nano/1.0@_/_:59529668bba449d790926edaacb64b613109aece",
+    "options": "ffmpeg:shared=False\nfontconfig:shared=False\nharfbuzz:shared=False\nzlib:shared=False",
+    "requires": {
+     "ffmpeg/1.0@_/_#db509be46b02fdcf65bd29bdaaf66396": "50597010-d89b-11e9-8235-645d86dec98e",
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "5059700e-d89b-11e9-8235-645d86dec98e",
+     "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412": "5059700f-d89b-11e9-8235-645d86dec98e",
+     "zlib/1.0@_/_#0e280695800433574bfb184cc8621b73": "50597011-d89b-11e9-8235-645d86dec98e"
+    }
+   }
+  }
+ },
+ "version": "0.1"
+}
